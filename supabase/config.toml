@@ -1,0 +1,4 @@
+project_id = "knulustsdmfhnwykhbqk"
+
+[functions.import-kardex]
+verify_jwt = false

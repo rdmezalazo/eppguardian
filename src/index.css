@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================================
+   Livigui Kardex EPP — Corporate Design System
+   Paleta basada en el logo: azul petróleo profundo + cian turquesa.
+   Todas las variables en HSL. Sobrio, profesional, industrial.
+   ================================================================ */
+
+@layer base {
+  :root {
+    /* Superficies */
+    --background: 200 30% 97%;
+    --foreground: 200 45% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 45% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 45% 12%;
+
+    /* Livigui — azul petróleo (color principal del logo) */
+    --primary: 198 65% 22%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 195 70% 38%;
+
+    /* Cian turquesa (triángulo del logo) — acento corporativo */
+    --secondary: 190 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 25% 94%;
+    --muted-foreground: 200 15% 42%;
+
+    --accent: 190 80% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 4 75% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 158 65% 35%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 200 45% 12%;
+
+    --border: 200 25% 88%;
+    --input: 200 25% 90%;
+    --ring: 198 65% 30%;
+
+    --radius: 0.75rem;
+
+    /* Gradientes corporativos */
+    --gradient-primary: linear-gradient(135deg, hsl(198 65% 18%) 0%, hsl(195 60% 28%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(198 70% 16%) 0%, hsl(195 65% 26%) 50%, hsl(190 70% 38%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(190 80% 42%), hsl(195 75% 50%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(200 30% 97%));
+    --gradient-subtle: linear-gradient(180deg, hsl(200 30% 98%), hsl(200 25% 94%));
+
+    /* Sombras sobrias y elegantes */
+    --shadow-xs: 0 1px 2px hsl(200 45% 12% / 0.04);
+    --shadow-sm: 0 2px 4px hsl(200 45% 12% / 0.06);
+    --shadow-md: 0 4px 16px -4px hsl(200 45% 12% / 0.10);
+    --shadow-lg: 0 16px 40px -12px hsl(200 45% 12% / 0.18);
+    --shadow-xl: 0 24px 60px -16px hsl(198 65% 22% / 0.25);
+    --shadow-glow: 0 0 0 4px hsl(198 65% 22% / 0.10);
+    --shadow-ring: 0 0 0 3px hsl(190 75% 45% / 0.25);
+
+    /* Transiciones unificadas */
+    --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar — azul profundo del logo */
+    --sidebar-background: 198 70% 14%;
+    --sidebar-foreground: 200 25% 92%;
+    --sidebar-primary: 190 80% 48%;
+    --sidebar-primary-foreground: 198 70% 12%;
+    --sidebar-accent: 198 60% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 198 55% 20%;
+    --sidebar-ring: 190 80% 50%;
+  }
+
+  .dark {
+    --background: 200 40% 7%;
+    --foreground: 200 25% 96%;
+    --card: 200 40% 11%;
+    --card-foreground: 200 25% 96%;
+    --popover: 200 40% 11%;
+    --popover-foreground: 200 25% 96%;
+    --primary: 190 75% 50%;
+    --primary-foreground: 200 45% 10%;
+    --primary-glow: 190 80% 60%;
+    --secondary: 190 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 200 30% 16%;
+    --muted-foreground: 200 15% 68%;
+    --accent: 190 80% 50%;
+    --accent-foreground: 200 45% 10%;
+    --destructive: 4 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 158 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 55%;
+    --warning-foreground: 200 45% 10%;
+    --border: 200 30% 20%;
+    --input: 200 30% 18%;
+    --ring: 190 75% 50%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(198 65% 14%) 0%, hsl(195 60% 22%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(198 70% 10%) 0%, hsl(195 65% 18%) 50%, hsl(190 70% 30%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01", "ss03";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  /* Scrollbar sobrio */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: hsl(var(--muted)); }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 8px;
+    border: 2px solid hsl(var(--muted));
+  }
+  ::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground) / 0.4); }
+
+  /* Selección de texto */
+  ::selection {
+    background: hsl(var(--secondary) / 0.25);
+    color: hsl(var(--primary));
+  }
+
+  /* Focus visible refinado */
+  :focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-ring);
+    border-radius: calc(var(--radius) - 2px);
+  }
+
+  /* Touch-friendly: bigger tap targets en tablets */
+  @media (pointer: coarse) {
+    button, a, [role="button"] {
+      min-height: 44px;
+    }
+  }
+}
+
+@layer components {
+  .status-dot {
+    @apply inline-block h-2.5 w-2.5 rounded-full;
+  }
+
+  .card-elevated {
+    @apply bg-card rounded-xl border border-border/60 shadow-[var(--shadow-md)] transition-shadow duration-300;
+  }
+  .card-elevated:hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .card-interactive {
+    @apply bg-card rounded-xl border border-border/60 shadow-[var(--shadow-sm)] transition-all duration-300;
+  }
+  .card-interactive:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: hsl(var(--primary) / 0.2);
+  }
+
+  .glass-panel {
+    background: hsl(var(--card) / 0.75);
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+
+  .heading-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+@layer utilities {
+  .transition-base { transition: all var(--transition-base); }
+  .transition-smooth { transition: all var(--transition-smooth); }
+
+  .animate-fade-in { animation: fade-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) both; }
+  .animate-slide-up { animation: slide-up 0.5s cubic-bezier(0.4, 0, 0.2, 1) both; }
+  .animate-scale-in { animation: scale-in 0.3s cubic-bezier(0.4, 0, 0.2, 1) both; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Línea de escaneo tipo HUD para validación de firma */
+.scanner-sweep {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(var(--primary) / 0.0) 10%,
+    hsl(var(--primary) / 0.45) 50%,
+    hsl(var(--primary) / 0.0) 90%,
+    transparent 100%
+  );
+  box-shadow: 0 0 24px 4px hsl(var(--primary) / 0.5);
+  animation: scanner-sweep 1.4s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes scanner-sweep {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(100vw + 6rem)); }
+}

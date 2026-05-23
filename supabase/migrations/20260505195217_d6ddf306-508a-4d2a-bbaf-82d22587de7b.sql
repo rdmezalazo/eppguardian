@@ -1,0 +1,2 @@
+ALTER TABLE public.module_permissions DROP CONSTRAINT IF EXISTS module_permissions_action_check;
+ALTER TABLE public.module_permissions ADD CONSTRAINT module_permissions_action_check CHECK (action = ANY (ARRAY['create'::text, 'edit'::text, 'void'::text, 'delete'::text, 'download'::text, 'import'::text]));

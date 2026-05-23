@@ -1,0 +1,30 @@
+
+UPDATE epps SET actividad='Trabajos en exteriores bajo lluvia o ambientes húmedos [Editable]', descripcion='Capotín impermeable de PVC con capucha, manga larga y cierre frontal, diseñado para proteger del agua y la humedad [Editable]', riesgo_previsto='Exposición a lluvia, humedad e hipotermia [Editable]', norma='ANSI/ISEA 107 - Ropa de protección contra agua [Editable]' WHERE id='eccd1d30-f259-4698-9899-710eabb5f429';
+
+UPDATE epps SET actividad='Esmerilado, pulido y desbaste de superficies metálicas [Editable]', descripcion='Careta facial transparente con visor de policarbonato resistente a impactos, ajuste tipo arnés [Editable]', riesgo_previsto='Proyección de partículas, chispas y fragmentos metálicos [Editable]', norma='ANSI Z87.1 - Protección facial y ocular [Editable]' WHERE id='dc8aeba5-db14-4b29-b5f7-efc429ace7d9';
+
+UPDATE epps SET actividad='Soldadura por arco eléctrico SMAW, MIG y TIG [Editable]', descripcion='Careta de soldar con filtro fotosensible auto-oscurecible, ajustable y con protección UV/IR [Editable]', riesgo_previsto='Radiación UV/IR, chispas, salpicaduras de metal fundido y quemaduras [Editable]', norma='ANSI Z87.1 / EN 379 - Protección para soldadura [Editable]' WHERE id='905d00ed-c867-4cdb-99b3-bc7afa6498d5';
+
+UPDATE epps SET actividad='Trabajos con exposición a vapores orgánicos y gases ácidos [Editable]', descripcion='Cartucho 3M 60923 multipropósito para vapores orgánicos, gases ácidos y partículas P100 [Editable]', riesgo_previsto='Inhalación de vapores orgánicos, gases ácidos y partículas tóxicas [Editable]', norma='NIOSH 42 CFR 84 - Filtros respiratorios [Editable]' WHERE id='cabbb637-f826-4edd-a5a5-0451d447f2cc';
+
+UPDATE epps SET actividad='Trabajos de soldadura y manipulación de materiales calientes [Editable]', descripcion='Casaca de cuero flor de res, costuras reforzadas, mangas largas y cierre frontal [Editable]', riesgo_previsto='Quemaduras por chispas, salpicaduras de metal fundido y radiación térmica [Editable]', norma='ANSI/ISEA 105 - Ropa de protección térmica [Editable]' WHERE id='5db1216e-9b10-4474-ad62-559fa402b37d';
+
+UPDATE epps SET actividad='Trabajos en ambientes fríos o exteriores [Editable]', descripcion='Chompa de tejido térmico con cuello alto, manga larga, cómoda y abrigadora [Editable]', riesgo_previsto='Exposición a bajas temperaturas e hipotermia [Editable]', norma='Norma interna de uniformes y abrigo [Editable]' WHERE id='5fda5f1b-d73d-4157-98bb-30c20281b9e7';
+
+UPDATE epps SET actividad='Protección respiratoria contra partículas y neblinas [Editable]', descripcion='Filtro 3M 2097 P100 con carbón activado para nuisance level de vapores orgánicos [Editable]', riesgo_previsto='Inhalación de polvos, neblinas y partículas en suspensión [Editable]', norma='NIOSH 42 CFR 84 - Filtro P100 [Editable]' WHERE id='d90c02b4-d5d1-4134-b5c1-6c5b83dd46cf';
+
+UPDATE epps SET actividad='Manipulación de objetos cortantes, láminas metálicas y vidrio [Editable]', descripcion='Guante anticorte tejido en galga 7 con remalle reforzado en el borde, talla 10.5" [Editable]', riesgo_previsto='Cortes, abrasiones y laceraciones en manos [Editable]', norma='EN 388 Nivel 5 - Resistencia al corte [Editable]' WHERE id='53a1160f-4f98-437d-be46-e67acd594d36';
+
+UPDATE epps SET actividad='Manipulación de químicos, aceites y sustancias húmedas [Editable]', descripcion='Guante Showa Atlas 772 de nitrilo con soporte textil, palma rugosa antideslizante [Editable]', riesgo_previsto='Contacto con químicos, aceites y agentes irritantes [Editable]', norma='EN 374 - Protección química / EN 388 [Editable]' WHERE id='825eb30f-7076-424b-97ac-ad1338e5ff23';
+
+UPDATE epps SET actividad='Trabajos pesados de manipulación, construcción y soldadura ligera [Editable]', descripcion='Guante Hycron de algodón recubierto en nitrilo, puño de seguridad, alta resistencia a la abrasión [Editable]', riesgo_previsto='Abrasión, cortes leves y contacto con superficies ásperas [Editable]', norma='EN 388 - Protección mecánica [Editable]' WHERE id='30aae429-d957-47c0-9913-819435e3ae5d';
+
+UPDATE epps SET actividad='Trabajos con riesgo de salpicaduras químicas o partículas [Editable]', descripcion='Lente antiparra 650AF con lente claro antiempañante, ajuste hermético con banda elástica [Editable]', riesgo_previsto='Salpicaduras químicas, polvo fino y proyección de partículas [Editable]', norma='ANSI Z87.1 - Protección ocular [Editable]' WHERE id='ccc0a268-cc20-4256-8c5f-4321dd311e5d';
+
+UPDATE epps SET actividad='Trabajos de soldadura y corte de metales [Editable]', descripcion='Mandil de cuero flor de res con tiras de ajuste, cubre desde el pecho hasta las rodillas [Editable]', riesgo_previsto='Quemaduras por chispas, salpicaduras de metal y radiación térmica [Editable]', norma='ANSI/ISEA 105 - Protección térmica para soldadura [Editable]' WHERE id='d81e1140-579c-4e75-8e86-58248f5106af';
+
+UPDATE epps SET actividad='Soldadura, corte y trabajos con altas temperaturas [Editable]', descripcion='Overol de cuero de cuerpo entero, costuras reforzadas, cierre frontal y puños ajustables [Editable]', riesgo_previsto='Quemaduras, salpicaduras de metal fundido y radiación térmica [Editable]', norma='ANSI/ISEA 105 - Ropa de protección térmica [Editable]' WHERE id='dc3ec3fb-3f7a-4223-a5b4-fb20ba3930f7';
+
+UPDATE epps SET actividad='Soldadura y trabajos de rodillas en superficies calientes [Editable]', descripcion='Rodillera de cuero acolchada con sujeción mediante correas elásticas, alta resistencia térmica [Editable]', riesgo_previsto='Quemaduras en rodillas, golpes e impactos en superficies duras [Editable]', norma='EN 14404 - Protección de rodillas [Editable]' WHERE id='351026ff-095d-4371-a98c-10b52eca2c97';
+
+UPDATE epps SET actividad='Trabajos en áreas de alimentos, salud o salas limpias [Editable]', descripcion='Toca descartable de tela no tejida con elástico, hipoalergénica y de un solo uso [Editable]', riesgo_previsto='Contaminación cruzada por cabello y partículas [Editable]', norma='Norma sanitaria interna / BPM [Editable]' WHERE id='2dd27069-fb0f-49d6-908d-d1e1361264bb';

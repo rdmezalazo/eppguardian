@@ -1,0 +1,1 @@
+DELETE FROM public.kardex_entries WHERE id = 'fedb5a0c-08f6-4dc4-8e6b-545c2240fe0e';
