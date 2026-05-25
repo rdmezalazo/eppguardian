@@ -8,7 +8,7 @@ Sistema moderno de gestión y control de Equipos de Protección Personal (EPP) d
 
 El sistema se encuentra desplegado en Vercel:
 
-https://ticket-desk-ufzd.vercel.app/
+[Epp Guardian]https://ticket-desk-ufzd.vercel.app/
 
 ---
 
